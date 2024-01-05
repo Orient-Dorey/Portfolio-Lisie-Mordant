@@ -1,0 +1,341 @@
+body { 
+    background-color: #171717;
+    margin: 0;
+    padding: 40px;
+    font-family: 'Didot';
+
+@font-face {
+  font-family: 'Didot';
+  font-weight:400;
+  src: url('test_fld_grd/monsitewebbienrange/Didot Regular.ttf') format('truetype');
+  src: url('test_fld_grd/monsitewebbienrange/Didot HTFL11Light Regular.otf') format('opentype');
+}
+
+}
+
+.navsbox {
+    /* padding: 10px; */
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    margin-right: 0px;
+    /* border: 1px solid #555; */
+    /* background-color: red; */
+    /* width: 50%; */
+    /* display: flex; */
+}
+
+.navsbox li a {
+    /* float: inherit; */
+    /* display: flex; */
+    display: inline-block;
+    padding: 10px;
+    /* width: 200px; */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.header-boxes {
+    display: flex;
+    flex-wrap: nowrap;
+    /* background-color: yellow; */
+}
+
+.hbox {
+    /* background-color: pink; */
+    display: flex;
+    /* width: 50%; */
+    /* margin: auto; */
+    padding: 0;
+}
+
+
+/* logo left */
+header .logotitle {
+    margin: 0;
+    margin-left: 0px;
+    width: 50%;
+    height: 80px;
+    /* background-color: blue; */
+    /* display: inline-block; */
+}
+
+
+.logotitle img{
+    display: inline-block;
+    height: 80px;
+}
+
+.logotitle a{
+  /* background-color: red; */
+  display: inline-block;
+  background-image: url("TITRE_logo_bleu_1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+  /* width: 360px; */
+  /* text-indent: -99999px; */
+  /* width: 100%;
+  height: 75px; */
+}
+
+
+/* mouse over link */
+.logotitle a:hover {
+  /* background-color: blue; */
+  display: inline-block;
+  background-image: url("TITRE_logo_jaune_1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+  /* width: 360px; */
+  /* text-indent: -99999px; */
+  /* width: 100%;
+  height: 75px; */
+}
+
+
+
+.page_title {
+  color: white;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+
+
+
+/* END HEADER */
+
+
+
+
+/* NEW LINE ADDED BY ORIENT - TEST WITH FLDGRD */
+
+main {
+  display: inline-block; /* [1] */
+  margin-top:25px;
+  /* background-color: red; */
+}
+
+/**
+* 1. Optional: 10px gutter
+*/
+.fld-grd {
+  margin-right: -5px; /* [1] */
+  margin-left: -5px; /* [1] */
+  padding: 0 0 5px 0;
+}
+
+/**
+* 1. Mandatory: `display: inline-block` or a flexbox based grid system do also work
+* 2. Optional: 10px gutter
+*/
+.fld-grd > div {
+  float: left; /* [1] */
+  padding-right: 5px; /* [2] */
+  padding-left: 5px; /* [2] */
+  margin-bottom: 10px;
+}
+
+/**
+* 1. Optional: Setting `vertical-align` removes the whitespace that appears below `<img>` elements
+*    when they are dropped into a page as-is
+*/
+.fld-grd > div > img {
+  vertical-align: top; /* [1] */
+}
+
+
+/* CONTACT PAGE */
+
+
+.contact_page {
+  margin-top: 25px;
+  /* background-color: blue; */
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.name_title {
+  margin-top: 15px;
+  color: white;
+  font-size: 48px;
+}
+
+.position_subtitle {
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.location {
+  margin-top: 15px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.link_mail {
+  display: inline-block;
+  /* background-color: black; */
+  outline: solid blueviolet 1px;
+  outline-offset: 15px;
+  border-radius: 25px;
+  margin-top: 35px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.link_mail img {
+  /* display: inline-block; */
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.link_mail:hover {
+  color: blueviolet;
+}
+
+/* .icon_link {
+  display: inline;
+  background-color: blue;
+  list-style-type: none;
+}
+
+.icon_link li a img {
+  background-color: rebeccapurple;
+  vertical-align: middle;
+
+} */
+
+
+
+.icon_box{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.icon_link {
+  vertical-align: middle;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+
+.icon_link li a {
+    padding: 3px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    color: white;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.footer-boxes{
+  /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.icon_reseau_link {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+}
+
+.icon_reseau_link li a {
+    padding: 3px;
+    text-indent: -9999999px;
+}
+
+.center {
+    margin: auto;
+}
+
+.back_to_top_button {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* .back_to_top_button:hover {
+  color: blueviolet;
+} */
+
+
+.text {
+    margin: auto;
+    margin-left: 0px;
+    font-size: 10px;
+}
+
+
+/* ITERATION TABLET */
+@media only screen and (max-width: 800px){
+
+  .header-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    /* align-items: center; */
+  }
+
+  .logotitle {
+    display:contents;
+
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+  }
+  .navsbox{
+    margin: auto;
+    margin-top: 20px;
+    /* display: inline-block; */
+  }
+
+  .footer-boxes{
+    flex-direction: column-reverse;
+    
+  }
+
+  .fbox{
+    margin: auto;
+    padding: 15px;
+    /* background-color: azure; */
+  }
+
+  .contact_icons {
+    display: none;
+  }
+
+  .icon_reseau_link {
+    padding: 0px;
+  }
+
+  .contact_page {
+    background-color: blue;
+    /* width: 200%; */
+  }
+
+}
+
+
+
