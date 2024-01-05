@@ -239,58 +239,61 @@ main {
 
 
 /* FOOTER */
-
-footer {
-    color: white;
-    width: 100%;
-    /* background-color: yellow; */
-}
+/* ****** */
 
 .footer-boxes{
-  /* background-color: pink; */
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    margin: 10px;
-    text-align: center;
-    line-height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px 0;
+
+}
+.fbox {
+  width: 33.33%;
 }
 
-.icon_reseau_link {
-    display: flex;
-    list-style-type: none;
-    margin-left: auto;
-}
-
-.icon_reseau_link li a {
-    padding: 3px;
-    text-indent: -9999999px;
-}
-
-.center {
-    margin: auto;
-}
-
-.back_to_top_button {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-/* .back_to_top_button:hover {
-  color: blueviolet;
-} */
-
-
+/* All rights reserved */
 .text {
-    margin: auto;
-    margin-left: 0px;
-    font-size: 10px;
+  margin-left: 0px;
+  font-size: 10px;
 }
+
+/* BACK TO TOP */
+.center { 
+  text-align: center;
+}
+.back_to_top_button {
+  color: white;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 12px;
+}
+.back_to_top_button:hover {
+  color: blueviolet;
+}
+
+/* Icons */
+.icons {
+  width: fit-content;
+  float: right;
+}
+.iconic {
+  float: left;
+  width: 32px;
+  vertical-align: middle;
+  height: 18.75px;
+  line-height: 18.75px;
+}
+
+/* END OF FOOTER */
+
+
 
 
 /* ITERATION TABLET */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
 
   .header-boxes {
     display: flex;
@@ -313,27 +316,45 @@ footer {
 
   .footer-boxes{
     flex-direction: column-reverse;
-    
+    text-align: center; 
+    /* align-items: center;
+    justify-content: center;  */
+    padding: 20px;
+    /* padding ici = marge entre logos du corps et Back to top */
   }
 
   .fbox{
-    margin: auto;
-    padding: 15px;
-    /* background-color: azure; */
+    width: 100%;
+    /* padding: 15px; */
+    /* background-color: green; */
+  }
+
+  .text {
+    margin: 15px; 
+    /* Marge entre back to top et copyright */
   }
 
   .contact_icons {
     display: none;
   }
 
-  .icon_reseau_link {
-    padding: 0px;
+
+  .icons {
+    background-color: pink;
+    width: 100%;
+    float: none;
+
   }
 
-  .contact_page {
-    background-color: blue;
-    /* width: 200%; */
+  .iconic {
+background-color: blue;
+float: none;
+
   }
+  .two {
+    background-color: red;
+  }
+
 
 }
 
