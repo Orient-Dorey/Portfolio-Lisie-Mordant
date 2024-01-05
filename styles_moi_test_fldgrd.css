@@ -14,24 +14,16 @@ body {
 }
 
 .navsbox {
-    /* padding: 10px; */
     list-style-type: none;
     margin: auto;
     padding: 0;
     overflow: hidden;
     margin-right: 0px;
-    /* border: 1px solid #555; */
-    /* background-color: red; */
-    /* width: 50%; */
-    /* display: flex; */
 }
 
 .navsbox li a {
-    /* float: inherit; */
-    /* display: flex; */
     display: inline-block;
     padding: 10px;
-    /* width: 200px; */
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -39,14 +31,10 @@ body {
 .header-boxes {
     display: flex;
     flex-wrap: nowrap;
-    /* background-color: yellow; */
 }
 
 .hbox {
-    /* background-color: pink; */
     display: flex;
-    /* width: 50%; */
-    /* margin: auto; */
     padding: 0;
 }
 
@@ -57,8 +45,6 @@ header .logotitle {
     margin-left: 0px;
     width: 50%;
     height: 80px;
-    /* background-color: blue; */
-    /* display: inline-block; */
 }
 
 
@@ -68,31 +54,21 @@ header .logotitle {
 }
 
 .logotitle a{
-  /* background-color: red; */
   display: inline-block;
   background-image: url("TITRE_logo_bleu_1.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 80px;
-  /* width: 360px; */
-  /* text-indent: -99999px; */
-  /* width: 100%;
-  height: 75px; */
 }
 
 
 /* mouse over link */
 .logotitle a:hover {
-  /* background-color: blue; */
   display: inline-block;
   background-image: url("TITRE_logo_jaune_1.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 80px;
-  /* width: 360px; */
-  /* text-indent: -99999px; */
-  /* width: 100%;
-  height: 75px; */
 }
 
 
@@ -156,7 +132,6 @@ main {
 
 .contact_page {
   margin-top: 25px;
-  /* background-color: blue; */
   display: block;
   text-align: center;
   width: 100%;
@@ -183,7 +158,6 @@ main {
 
 .link_mail {
   display: inline-block;
-  /* background-color: black; */
   outline: solid blueviolet 1px;
   outline-offset: 15px;
   border-radius: 25px;
@@ -194,7 +168,6 @@ main {
 }
 
 .link_mail img {
-  /* display: inline-block; */
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -202,19 +175,6 @@ main {
 .link_mail:hover {
   color: blueviolet;
 }
-
-/* .icon_link {
-  display: inline;
-  background-color: blue;
-  list-style-type: none;
-}
-
-.icon_link li a img {
-  background-color: rebeccapurple;
-  vertical-align: middle;
-
-} */
-
 
 
 .icon_box{
@@ -299,39 +259,27 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    /* align-items: center; */
   }
 
   .logotitle {
     display:contents;
-
-    /* margin-left: auto; */
-    /* margin-right: auto; */
   }
   .navsbox{
     margin: auto;
     margin-top: 20px;
-    /* display: inline-block; */
   }
 
   .footer-boxes{
     flex-direction: column-reverse;
     text-align: center; 
-    /* align-items: center;
-    justify-content: center;  */
-    padding: 20px;
-    /* padding ici = marge entre logos du corps et Back to top */
   }
 
   .fbox{
     width: 100%;
-    /* padding: 15px; */
-    /* background-color: green; */
   }
 
   .text {
     margin: 15px; 
-    /* Marge entre back to top et copyright */
   }
 
   .contact_icons {
@@ -340,20 +288,17 @@ main {
 
 
   .icons {
-    background-color: pink;
+    margin: 15px 0;
     width: 100%;
     float: none;
-
   }
 
   .iconic {
-background-color: blue;
-float: none;
 
+    display: inline-block;
+    float: none;
   }
-  .two {
-    background-color: red;
-  }
+
 
 
 }
