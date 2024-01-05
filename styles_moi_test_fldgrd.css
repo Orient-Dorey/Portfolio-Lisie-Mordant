@@ -2,10 +2,10 @@ body {
     background-color: #171717;
     margin: 0;
     padding: 40px;
-    font-family: 'Didot';
+    font-family:'Times New Roman', Times, serif;
 
 @font-face {
-  font-family: 'Didot';
+  font-family:'Times New Roman', Times, serif;
   font-weight:400;
   src: url('test_fld_grd/monsitewebbienrange/Didot Regular.ttf') format('truetype');
   src: url('test_fld_grd/monsitewebbienrange/Didot HTFL11Light Regular.otf') format('opentype');
