@@ -3,6 +3,7 @@
     <head>
         <title>Eucalis Art</title>
         <link rel="stylesheet" href="styles_moi_test_fldgrd.css">
+        <!-- <link rel="stylesheet" href="menu_anim_nav.scss"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Character and environment concept illustrations by junior concept artist Lisie Mordant also known as Eucalis.">
     </head>
@@ -11,9 +12,8 @@
         <header>
             <div class="header-boxes">
                 <div class="hbox logotitle">
-                    <!-- <a href="index.html"><img style="float: left;" height="75px" src="TITRE_logo_bleu.png" alt="EUCALIS Logo"></a> -->
-                    <a href="index.html"><img style="visibility: hidden;" src="TITRE_logo_bleu_1.png" alt="EUCALIS Logo"></a>
-                    <!-- <a href="index.html"><img height="75px" src="TITRE_logo_jaune.png" alt="EUCALIS Logo"></a> -->
+                    <a class="full_logo" href="index.html"><img style="visibility: hidden;" src="TITRE_logo_bleu_1.png" alt="EUCALIS Logo"></a>
+                    <a class="logo_reduit" href="index.html"><img style="visibility: hidden;" src="Logo_bleu_1.png" alt="EUCALIS Logo réduit"></a>
                 </div>
                 
                 <ul class="hbox navsbox" >
@@ -94,14 +94,6 @@
 
 
 <!-- JAVASCRIPT -->
-<!-- <script>
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script> -->
-
 <script src="fld-grd.js"></script>
 <script>
     new FldGrd(document.querySelector('.fld-grd'), {

@@ -28,6 +28,10 @@ body {
     text-decoration: none;
 }
 
+/* .menu_container {
+  display: none;
+} */
+
 .header-boxes {
     display: flex;
     flex-wrap: nowrap;
@@ -47,13 +51,12 @@ header .logotitle {
     height: 80px;
 }
 
-
 .logotitle img{
     display: inline-block;
     height: 80px;
 }
 
-.logotitle a{
+.full_logo{
   display: inline-block;
   background-image: url("TITRE_logo_bleu_1.png");
   background-repeat: no-repeat;
@@ -61,17 +64,14 @@ header .logotitle {
   height: 80px;
 }
 
-
 /* mouse over link */
-.logotitle a:hover {
+.full_logo:hover {
   display: inline-block;
   background-image: url("TITRE_logo_jaune_1.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: 80px;
 }
-
-
 
 .page_title {
   color: white;
@@ -81,9 +81,6 @@ header .logotitle {
   font-size: 24px;
   text-transform: uppercase;
 }
-
-
-
 
 /* END HEADER */
 
@@ -255,24 +252,58 @@ main {
 /* ITERATION TABLET */
 @media only screen and (max-width: 900px){
 
-  .header-boxes {
+  /* .header-boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
+  } */
+
+
+  /* test */
+
+  header .logotitle {
+    /* background-color: pink;
+    margin: 0;
+    margin-left: 0px; */
+    width: 100%;
   }
 
-  .logotitle {
-    display:contents;
+/* Logo */
+  .full_logo{
+    display: none;
   }
+  .logo_reduit{
+    display: inline-block;
+    background-image: url("Logo_bleu_1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80px;
+  }
+  .logo_reduit:hover {
+    display: inline-block;
+    background-image: url("Logo_jaune_1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80px;
+  }
+
   .navsbox{
     margin: auto;
     margin-top: 20px;
   }
 
-  /* .fld-grd{
-    flex-direction: column;
+  /* Contact page */
+  /* .contact_nav{
+    display: none;
   } */
 
+  .page_title{
+    margin-top: 15px;
+  }
+
+  .contact_page{
+    margin-top: 15px; 
+  }
 
   .footer-boxes{
     flex-direction: column-reverse;
@@ -291,7 +322,6 @@ main {
     display: none;
   }
 
-
   .icons {
     margin: 15px 0;
     width: 100%;
@@ -299,13 +329,9 @@ main {
   }
 
   .iconic {
-
     display: inline-block;
     float: none;
   }
-
-
-
 }
 
 
