@@ -269,6 +269,11 @@ main {
     margin-top: 20px;
   }
 
+  /* .fld-grd{
+    flex-direction: column;
+  } */
+
+
   .footer-boxes{
     flex-direction: column-reverse;
     text-align: center; 
