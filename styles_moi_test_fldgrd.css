@@ -7,8 +7,8 @@ body {
 @font-face {
   font-family:'Times New Roman', Times, serif;
   font-weight:400;
-  src: url('test_fld_grd/monsitewebbienrange/Didot Regular.ttf') format('truetype');
-  src: url('test_fld_grd/monsitewebbienrange/Didot HTFL11Light Regular.otf') format('opentype');
+  src: url('Didot Regular.ttf') format('truetype');
+  src: url('Didot HTFL11Light Regular.otf') format('opentype');
 }
 
 }
@@ -287,10 +287,10 @@ main {
     height: 80px;
   }
 
-  .navsbox{
+  /* .navsbox{
     margin: auto;
     margin-top: 20px;
-  }
+  } */
 
   /* Contact page */
   /* .contact_nav{

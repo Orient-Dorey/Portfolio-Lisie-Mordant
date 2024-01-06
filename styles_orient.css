@@ -1,0 +1,287 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"); */
+
+
+/* body { 
+    background-color: #171717;
+    margin: 0;
+    padding: 40px;
+    font-family:'Times New Roman', Times, serif;
+} */
+
+@font-face {
+  font-family:'Times New Roman', Times, serif;
+  font-weight:400;
+  src: url('Didot Regular.ttf') format('truetype');
+  src: url('Didot HTFL11Light Regular.otf') format('opentype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #171717;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 5%;
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #171717;
+    z-index: -1;
+}
+
+
+/* .logo {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+} */
+
+
+/* logo left */
+.header #logotitle {
+    margin: 0;
+    margin-left: 0px;
+    width: 50%;
+    height: 80px;
+}
+
+.logotitle img{
+    display: inline-block;
+    height: 80px;
+}
+
+.full_logo{
+  display: inline-block;
+  background-image: url("TITRE_logo_bleu_1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+}
+
+/* mouse over link */
+.full_logo:hover {
+  display: inline-block;
+  background-image: url("TITRE_logo_jaune_1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+}
+/* 
+.page_title {
+  color: white;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+} */
+
+
+
+
+
+
+
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 5%;
+    /* right needs to be same as padding at first breakpoint */
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+main {
+    padding: 10rem 5%;
+    display: inline-block; /* [1] */
+    /* margin-top:25px; */
+    /* background-color: red; */
+  }
+  
+  /**
+  * 1. Optional: 10px gutter
+  */
+  .fld-grd {
+    margin-right: -5px; /* [1] */
+    margin-left: -5px; /* [1] */
+    padding: 0 0 5px 0;
+  }
+  
+  /**
+  * 1. Mandatory: `display: inline-block` or a flexbox based grid system do also work
+  * 2. Optional: 10px gutter
+  */
+  .fld-grd > div {
+    float: left; /* [1] */
+    padding-right: 5px; /* [2] */
+    padding-left: 5px; /* [2] */
+    margin-bottom: 10px;
+  }
+  
+  /**
+  * 1. Optional: Setting `vertical-align` removes the whitespace that appears below `<img>` elements
+  *    when they are dropped into a page as-is
+  */
+  .fld-grd > div > img {
+    vertical-align: top; /* [1] */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BREAKPOINTS */
+/* @media (max-width: 1010px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+} */
+
+@media (max-width: 900px) {
+    .header {
+        padding: 1.3rem 10%;
+    }
+
+
+
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(23, 23, 23, .8);
+        box-shadow: 0 .5rem 1rem rgba(23, 23, 23, .2);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    
+    #check:checked~.navbar {
+        height: 9.3rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    /* Logo */
+    .full_logo{
+        display: none;
+    }
+    .logo_reduit{
+        display: inline-block;
+        background-image: url("Logo_bleu_1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 80px;
+    }
+    .logo_reduit:hover {
+        display: inline-block;
+        background-image: url("Logo_jaune_1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 80px;
+    }
+
+}
+
+
+

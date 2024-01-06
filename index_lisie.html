@@ -1,110 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UQ-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Lisie Mordant, junior concept artist</title>
-    <meta name="description" content="Character and environment concept illustrations by junior concept artist Lisie Mordant also known as Eucalis.">
-    <link rel="stylesheet" href="styles_orient.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-
-<body>
-    
-    <header class="header">
-        <!-- <a href="#" class="logo">Logo</a> -->
-
-        <div class="hbox logotitle">
-            <a class="full_logo" href="index.html"><img style="visibility: hidden;" src="TITRE_logo_bleu_1.png" alt="EUCALIS Logo"></a>
-            <a class="logo_reduit" href="index.html"><img style="visibility: hidden;" src="Logo_bleu_1.png" alt="EUCALIS Logo réduit"></a>
-        </div>
-
-        <input type="checkbox" id="check">
-        <label for="check" class="icons">
-            <i class="bx bx-menu" id="menu-icon"></i>
-            <i class="bx bx-x" id="close-icon"></i>
-        </label>
-
-        <nav class="navbar">
-            <a href="#" style="--i:0;">Background design</a>
-            <a href="#" style="--i:1;">Chara design</a>
-            <a href="contact.html" style="--i:2;">Contact</a>
-        </nav>
-    </header>
-
-
-    <main>
-        <div class="c-fld-grd fld-grd">
-            <div data-fld-width="2732" data-fld-height="2048">
-                <img src="image/IMG_2548.jpg" width="273">
-            </div>
-            <div data-fld-width="2732" data-fld-height="2048">
-                <img src="image/IMG_2493.png" width="273">
-            </div>
-            <div data-fld-width="3508" data-fld-height="2480">
-                <img src="image/Artside/Mockup Ingame.jpg" width="351">
-            </div>
-            <div data-fld-width="3508" data-fld-height="2480">
-                <img src="image/Artside/Suren final.jpg" width="351">
-            </div>
-            <div data-fld-width="3508" data-fld-height="2480">
-                <img src="image/Artside/Basan final.jpg" width="341">
-            </div>
-            <div data-fld-width="2048" data-fld-height="2732">
-                <img src="image/Etude_1h20_2023.png" width="600">
-            </div>
-            <div data-fld-width="8465" data-fld-height="4331">
-                <img src="image/Couverture et dos 2.0-min.png" width="847">
-            </div>
-
-            <div data-fld-width="4096" data-fld-height="1714">
-                <img src="image/Pfe/iso int colo finis1.png" width="410">
-            </div>
-
-
-        </div>
-    </main>
-
-</body>
-
-</html>
-
-
-
-
-<script src="fld-grd.js"></script>
-<script>
-    new FldGrd(document.querySelector('.fld-grd'), {
-        rowHeight: 800,
-    });
-
-    function myFunction(x) {
-  if (x.matches) { // If media query matches
-    new FldGrd(document.querySelector('.fld-grd'), {
-        rowHeight: 300,
-    });
-  } else {
-    new FldGrd(document.querySelector('.fld-grd'), {
-        rowHeight: 520,
-    });
-  }
-    }
-
-    var x = window.matchMedia("(max-width: 900px)")
-    myFunction(x) // Call listener function at run time
-    x.addListener(myFunction) // Attach listener function on state changes
-
-
-</script>
-
-
-
-<!-- 
-
-<!DOCTYPE html>
 <html>
+    <head>
+        <title>Eucalis Art</title>
+        <link rel="stylesheet" href="styles_moi_test_fldgrd.css">
+        <!-- <link rel="stylesheet" href="menu_anim_nav.scss"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Character and environment concept illustrations by junior concept artist Lisie Mordant also known as Eucalis.">
+    </head>
 
     <body>
         <header>
@@ -143,6 +45,7 @@
                     <img src="image/Artside/Basan final.jpg" width="341">
                 </div>
                 <div data-fld-width="2048" data-fld-height="2732">
+                    <!-- <a href="temp.html"><img src="image/Etude_1h20_2023.png" width="600"></a> -->
                     <img src="image/Etude_1h20_2023.png" width="600">
                 </div>
                 <div data-fld-width="8465" data-fld-height="4331">
@@ -190,6 +93,7 @@
     </body>
 
 
+<!-- JAVASCRIPT -->
 <script src="fld-grd.js"></script>
 <script>
     new FldGrd(document.querySelector('.fld-grd'), {
@@ -217,4 +121,4 @@
 
 
 
-</html> -->
+</html>
