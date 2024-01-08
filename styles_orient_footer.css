@@ -2,7 +2,7 @@
 /* ****** */
 
 .footer-boxes{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -36,12 +36,12 @@
 
 /* Icons */
 .apps {
-    background-color: blue;
+    /* background-color: blue; */
     /* width: fit-content; */
     float: right;
 }
 .iconic {
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-left: 3px;
     float: left;
     /* vertical-align: middle; */
