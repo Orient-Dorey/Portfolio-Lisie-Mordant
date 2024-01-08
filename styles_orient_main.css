@@ -1,0 +1,35 @@
+main {
+    padding: 10rem 5%;
+    display: inline-block;
+    /* height: 2rem; */
+    /* margin-top:25px; */
+    /* background-color: red; */
+}
+
+/**
+* 1. Optional: 10px gutter
+*/
+.fld-grd {
+    margin-right: -5px; /* [1] */
+    margin-left: -5px; /* [1] */
+    padding: 0 0 5px 0;
+}
+
+/**
+* 1. Mandatory: `display: inline-block` or a flexbox based grid system do also work
+* 2. Optional: 10px gutter
+*/
+.fld-grd > div {
+    float: left; /* [1] */
+    padding-right: 5px; /* [2] */
+    padding-left: 5px; /* [2] */
+    margin-bottom: 10px;
+}
+
+/**
+* 1. Optional: Setting `vertical-align` removes the whitespace that appears below `<img>` elements
+*    when they are dropped into a page as-is
+*/
+.fld-grd > div > img {
+    vertical-align: top; /* [1] */
+}

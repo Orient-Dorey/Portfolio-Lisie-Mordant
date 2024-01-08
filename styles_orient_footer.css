@@ -1,0 +1,53 @@
+/* FOOTER */
+/* ****** */
+
+.footer-boxes{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px 5% 0 5%;
+  
+}
+.fbox {
+    width: 33.33%;
+}
+
+/* All rights reserved */
+.text {
+    font-size: 10px;
+}
+
+/* BACK TO TOP */
+.center { 
+    text-align: center;
+}
+.back_to_top_button {
+    color: white;
+    /* margin: 0 auto; */
+    text-decoration: none;
+    font-size: 15px;
+}
+.back_to_top_button:hover {
+    color: blueviolet;
+}
+
+/* Icons */
+.apps {
+    background-color: blue;
+    /* width: fit-content; */
+    float: right;
+}
+.iconic {
+    background-color: aqua;
+    margin-left: 3px;
+    float: left;
+    /* vertical-align: middle; */
+    height: 18.75px;
+    line-height: 18.75px;
+}
+
+  /* END OF FOOTER */
+
