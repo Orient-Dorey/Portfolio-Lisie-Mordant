@@ -1,0 +1,81 @@
+.album-mosaic {
+    margin-top: 1.875rem;
+    margin-left: -0.3125rem;
+    margin-right: -0.3125rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0
+}
+
+.album-mosaic-flex-grow .album-mosaic-item {
+    flex-grow: 1
+}
+
+.album-mosaic-flex-grow .album-mosaic-image {
+    min-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.album-mosaic-item {
+    position: relative;
+    display: block;
+    margin-left: 0.3125rem;
+    margin-right: 0.3125rem;
+    margin-bottom: 0.625rem
+}
+
+.album-mosaic-image {
+    width: 100%;
+    height: initial;
+    vertical-align: top
+}
+
+.album-mosaic-description {
+    margin-top: 1.375rem;
+    text-align: center;
+    color: #BFBFBF;
+    font-size: 0.875rem;
+    text-overflow: ellipsis
+}
+
+.album-mosaic-embed {
+    margin-bottom: -0.625rem;
+    margin-top: 0
+}
+
+@media (max-width: 47.9375em) {
+    .album-mosaic {
+        margin-top: 1.25rem
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.if-ie .album-mosaic {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.if-ie .album-mosaic-item {
+    margin-left: .31em;
+    margin-right: .31em
+}

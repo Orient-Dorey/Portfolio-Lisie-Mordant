@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles_orient_header.css">
     <link rel="stylesheet" href="styles_orient_main.css">
     <link rel="stylesheet" href="styles_orient_footer.css">
+    <link rel="stylesheet" href="custom.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -42,32 +43,35 @@ include('header.php');
         <div class="page_title">
             Portfolio
         </div>
-        <div class="c-fld-grd fld-grd">
+        <div class="site-content">
+            <div class="album-mosaic">
+        <!-- <div class="c-fld-grd fld-grd"> -->
             <!-- <div class="c-fld-grd fld-grd"> -->
-                <div data-fld-width="2732" data-fld-height="1362">
-                    <img src="image/Blue_Pegasus_Keyframe.jpg" width="273">
+                <div class="album-mosaic-item" data-fld-width="2732" data-fld-height="1362">
+                    <img class="album-mosaic-image" src="image/Blue_Pegasus_Keyframe.jpg" width="273">
                 </div>
-                <div data-fld-width="2732" data-fld-height="2048">
-                    <img src="image/IMG_2493.png" width="273">
+                <div class="album-mosaic-item" data-fld-width="2732" data-fld-height="2048">
+                    <img class="album-mosaic-image" src="image/IMG_2493.png" width="273">
                 </div>
-                <div data-fld-width="3508" data-fld-height="2480">
-                    <img src="image/Artside/Mockup Ingame.jpg" width="351">
+                <div class="album-mosaic-item" data-fld-width="3508" data-fld-height="2480">
+                    <img class="album-mosaic-image" src="image/Artside/Mockup Ingame.jpg" width="351">
                 </div>
-                <div data-fld-width="8465" data-fld-height="4331">
-                    <img src="image/Couverture et dos 2.0-min.png" width="847">
+                <div class="album-mosaic-item" data-fld-width="8465" data-fld-height="4331">
+                    <img class="album-mosaic-image" src="image/Couverture et dos 2.0-min.png" width="847">
                 </div>
-                <div data-fld-width="6667" data-fld-height="3055">
-                    <img src="image/Pfe/PFE_Bedroom.jpg" width="666">
+                <div class="album-mosaic-item" data-fld-width="6667" data-fld-height="3055">
+                    <img class="album-mosaic-image" src="image/Pfe/PFE_Bedroom.jpg" width="666">
                 </div>
-                <div data-fld-width="6667" data-fld-height="3055">
-                    <img src="image/Pfe/PFE_Empereur.jpg" width="666">
+                <div class="album-mosaic-item" data-fld-width="6667" data-fld-height="3055">
+                    <img class="album-mosaic-image" src="image/Pfe/PFE_Empereur.jpg" width="666">
                 </div>
-                <div data-fld-width="1024" data-fld-height="460">
-                    <img src="image/Pfe/MicrosoftTeams-image (4).png" width="102">
+                <div class="album-mosaic-item" data-fld-width="1024" data-fld-height="460">
+                    <img class="album-mosaic-image" src="image/Pfe/MicrosoftTeams-image (4).png" width="102">
                 </div>
-                <div data-fld-width="2048" data-fld-height="2732">
-                    <img src="image/Etude_1h20_2023.png" width="204">
+                <div class="album-mosaic-item" data-fld-width="2048" data-fld-height="2732">
+                    <img class="album-mosaic-image" src="image/Etude_1h20_2023.png" width="204">
                 </div>
+            </div>
         </div>
     </main>
 
@@ -112,31 +116,34 @@ include('header.php');
 
 
 <!-- JAVASCRIPT -->
+<script src="other_fld_grd_file.js"></script>
 <script src="fld-grd.js"></script>
-<script>
-    new FldGrd(document.querySelector('.fld-grd'), {
-        rowHeight: 800,
-    });
-
-    function myFunction(x) {
-  if (x.matches) { // If media query matches
-    new FldGrd(document.querySelector('.fld-grd'), {
-        rowHeight: 300,
-    });
-  } else {
+<!-- <script src="/asset/js/fldGrd.min.js"></script> -->
+<script src="app.js"></script>
+<!-- <script>
     new FldGrd(document.querySelector('.fld-grd'), {
         rowHeight: 520,
     });
-  }
-    }
 
-    var x = window.matchMedia("(max-width: 900px)")
-    myFunction(x) // Call listener function at run time
-    x.addListener(myFunction) // Attach listener function on state changes
+//     function myFunction(x) {
+//   if (x.matches) { // If media query matches
+//     new FldGrd(document.querySelector('.fld-grd'), {
+//         rowHeight: 200,
+//     });
+//   } else {
+//     new FldGrd(document.querySelector('.fld-grd'), {
+//         rowHeight: 520,
+//     });
+//   }
+//     }
+
+//     var x = window.matchMedia("(max-width: 480px)")
+//     myFunction(x) // Call listener function at run time
+//     x.addListener(myFunction) // Attach listener function on state changes
 
 
 </script>
-
+ -->
 
 
 <!-- 
