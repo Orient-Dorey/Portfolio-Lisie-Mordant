@@ -1,9 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
 main {
-    padding: 10rem 5%;
+    padding: 10rem 5% 2rem;
     display: inline-block;
     /* height: 2rem; */
     /* margin-top:25px; */
     /* background-color: red; */
+}
+
+.page_title {
+    color: white;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 /**
@@ -33,3 +49,78 @@ main {
 .fld-grd > div > img {
     vertical-align: top; /* [1] */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT PAGE */
+
+.contact_page {
+    padding: 10rem 5% 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .name_title {
+    margin-top: 15px;
+    color: white;
+    font-size: 48px;
+  }
+  
+  .position_subtitle {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  
+  .location {
+    margin-top: 15px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  
+  .link_mail {
+    display: inline-block;
+    outline: solid blueviolet 1px;
+    outline-offset: 15px;
+    border-radius: 25px;
+    margin-top: 35px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
+
+  
+  .link_mail:hover {
+    color: blueviolet;
+  }
+  
+  .icon_box{
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+  }
+  
+  .icon_link {
+    vertical-align: middle;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .icon_link li a {
+      padding: 3px;
+  }

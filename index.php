@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UQ-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Lisie Mordant aka, junior concept artist</title>
+    <meta name="description" content="Character and environment concept illustrations by junior concept artist Lisie Mordant also known as Eucalis.">
+    <link rel="stylesheet" href="styles_orient_header.css">
+    <link rel="stylesheet" href="styles_orient_main.css">
+    <link rel="stylesheet" href="styles_orient_footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<?php
+include('header.php');
+?>
+        
+    <!-- <header class="header">
+        <div class="hbox logotitle">
+            <a class="full_logo" href="index.html"><img style="visibility: hidden;" src="TITRE_logo_bleu_1.png" alt="EUCALIS Logo"></a>
+            <a class="logo_reduit" href="index.html"><img style="visibility: hidden;" src="Logo_bleu_1.png" alt="EUCALIS Logo réduit"></a>
+        </div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#" style="--i:0;">Background design</a>
+            <a href="#" style="--i:1;">Chara design</a>
+            <a href="contact.html" style="--i:2;">Contact</a>
+        </nav>
+    </header> -->
+
+
+    <main>
+        <div class="page_title">
+            Portfolio
+        </div>
+        <div class="c-fld-grd fld-grd">
+            <!-- <div class="c-fld-grd fld-grd"> -->
+                <div data-fld-width="2732" data-fld-height="1362">
+                    <img src="image/Blue_Pegasus_Keyframe.jpg" width="273">
+                </div>
+                <div data-fld-width="2732" data-fld-height="2048">
+                    <img src="image/IMG_2493.png" width="273">
+                </div>
+                <div data-fld-width="3508" data-fld-height="2480">
+                    <img src="image/Artside/Mockup Ingame.jpg" width="351">
+                </div>
+                <div data-fld-width="8465" data-fld-height="4331">
+                    <img src="image/Couverture et dos 2.0-min.png" width="847">
+                </div>
+                <div data-fld-width="6667" data-fld-height="3055">
+                    <img src="image/Pfe/PFE_Bedroom.jpg" width="666">
+                </div>
+                <div data-fld-width="6667" data-fld-height="3055">
+                    <img src="image/Pfe/PFE_Empereur.jpg" width="666">
+                </div>
+                <div data-fld-width="1024" data-fld-height="460">
+                    <img src="image/Pfe/MicrosoftTeams-image (4).png" width="102">
+                </div>
+                <div data-fld-width="2048" data-fld-height="2732">
+                    <img src="image/Etude_1h20_2023.png" width="204">
+                </div>
+        </div>
+    </main>
+
+<?php
+    include 'footer.php'
+?>
+    <!-- <footer>
+        <div class="footer-boxes">
+            <div class="text fbox">
+                &copy; All rights reserved
+            </div>
+            <div class="center fbox">
+                <div class="centering"> 
+                    <a class="back_to_top_button" href="#">BACK TO TOP</a>
+                </div>
+            </div>
+
+            <div class="icon_reseau_link fbox">
+                <div class="apps">
+                    <div class="iconic">
+                        <a href="https://www.instagram.com/lisie_mordant/"><img src="Illustration_sans_titre2.png"
+                         width="25px" alt="instagram_logo"></a>
+                    </div>
+                    <div class="iconic two">
+                        <a href="mailto:grenouille.patafix@gmail.com"><img src="Illustration_sans_titre.png" 
+                            width="25px" alt="mail_logo"></a>
+                    </div>
+                    <div class="iconic">
+                        <a href="https://www.linkedin.com/in/lisie-mordant"><img src="Illustration_sans_titre1.png"
+                            width="25px" alt="linkedin_logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+
+</body>
+
+</html>
+
+
+
+<!-- JAVASCRIPT -->
+<script src="fld-grd.js"></script>
+<script>
+    new FldGrd(document.querySelector('.fld-grd'), {
+        rowHeight: 800,
+    });
+
+    function myFunction(x) {
+  if (x.matches) { // If media query matches
+    new FldGrd(document.querySelector('.fld-grd'), {
+        rowHeight: 300,
+    });
+  } else {
+    new FldGrd(document.querySelector('.fld-grd'), {
+        rowHeight: 520,
+    });
+  }
+    }
+
+    var x = window.matchMedia("(max-width: 900px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+
+
+</script>
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <header>
+            <div class="header-boxes">
+                <div class="hbox logotitle">
+                    <a class="full_logo" href="index.html"><img style="visibility: hidden;" src="TITRE_logo_bleu_1.png" alt="EUCALIS Logo"></a>
+                    <a class="logo_reduit" href="index.html"><img style="visibility: hidden;" src="Logo_bleu_1.png" alt="EUCALIS Logo réduit"></a>
+                </div>
+                
+                <ul class="hbox navsbox" >
+                    <li><a href="background design.html">Background design</a></li>
+                    <li><a href="chara design.html">Chara design</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="page_title">
+                Portfolio
+            </div>
+        </header>
+
+        <main>
+            <div class="c-fld-grd fld-grd">
+                <div data-fld-width="2732" data-fld-height="2048">
+                    <img src="image/IMG_2548.jpg" width="273">
+                </div>
+                <div data-fld-width="2732" data-fld-height="2048">
+                    <img src="image/IMG_2493.png" width="273">
+                </div>
+                <div data-fld-width="3508" data-fld-height="2480">
+                    <img src="image/Artside/Mockup Ingame.jpg" width="351">
+                </div>
+                <div data-fld-width="3508" data-fld-height="2480">
+                    <img src="image/Artside/Suren final.jpg" width="351">
+                </div>
+                <div data-fld-width="3508" data-fld-height="2480">
+                    <img src="image/Artside/Basan final.jpg" width="341">
+                </div>
+                <div data-fld-width="2048" data-fld-height="2732">
+                    <img src="image/Etude_1h20_2023.png" width="600">
+                </div>
+                <div data-fld-width="8465" data-fld-height="4331">
+                    <img src="image/Couverture et dos 2.0-min.png" width="847">
+                </div>
+
+                <div data-fld-width="4096" data-fld-height="1714">
+                    <img src="image/Pfe/iso int colo finis1.png" width="410">
+                </div>
+
+
+            </div>
+        </main>
+        <footer>
+            <div class="footer-boxes">
+                <div class="text fbox">
+                    &copy; All rights reserved
+                </div>
+                <div class="center fbox">
+                    <div class="centering"> 
+                        <a class="back_to_top_button" href="#">BACK TO TOP</a>
+                    </div>
+                </div>
+    
+                <div class="icon_reseau_link fbox">
+                    <div class="icons">
+                        <div class="iconic">
+                            <a href="https://www.instagram.com/lisie_mordant/"><img src="Illustration_sans_titre2.png"
+                             width="25px" alt="instagram_logo"></a>
+                        </div>
+                        <div class="iconic two">
+                            <a href="mailto:grenouille.patafix@gmail.com"><img src="Illustration_sans_titre.png" width="25px"
+                                alt="mail_logo"></a>
+                        </div>
+                        <div class="iconic">
+                            <a href="https://www.linkedin.com/in/lisie-mordant"><img src="Illustration_sans_titre1.png"
+                                width="25px" alt="linkedin_logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+
+    </body>
+
+
+<script src="fld-grd.js"></script>
+<script>
+    new FldGrd(document.querySelector('.fld-grd'), {
+        rowHeight: 520,
+    });
+
+    function myFunction(x) {
+  if (x.matches) { // If media query matches
+    new FldGrd(document.querySelector('.fld-grd'), {
+        rowHeight: 300,
+    });
+  } else {
+    new FldGrd(document.querySelector('.fld-grd'), {
+        rowHeight: 520,
+    });
+  }
+    }
+
+    var x = window.matchMedia("(max-width: 900px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+
+
+</script>
+
+
+
+</html> -->

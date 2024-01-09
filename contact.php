@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UQ-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Lisie Mordant aka Eucalis, junior concept artist</title>
+    <meta name="description" content="Character and environment concept illustrations by junior concept artist Lisie Mordant also known as Eucalis.">
+    <link rel="stylesheet" href="styles_orient_header.css">
+    <link rel="stylesheet" href="styles_orient_main.css">
+    <link rel="stylesheet" href="styles_orient_footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<?php
+include('header.php');
+?>
+    <!-- <header class="header">
+        <div class="hbox logotitle">
+            <a class="full_logo" href="index.html"><img style="visibility: hidden;" src="TITRE_logo_bleu_1.png" alt="EUCALIS Logo"></a>
+            <a class="logo_reduit" href="index.html"><img style="visibility: hidden;" src="Logo_bleu_1.png" alt="EUCALIS Logo réduit"></a>
+        </div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#" style="--i:0;">Background design</a>
+            <a href="#" style="--i:1;">Chara design</a>
+            <a href="contact.html" style="--i:2;">Contact</a>
+        </nav>
+    </header> -->
+
+
+    <div class="contact_page">
+        <div class="page_title">
+            Contact
+        </div>
+        <div class="autoportrait">
+            <div><img style="border-radius: 50%;" src="logo_contact.png" width="250"></div>
+        </div>
+        <div class="name_title">Eucalis</div>
+        <div class="position_subtitle">Junior Concept Artist</div>
+        <div class="location">Bordeaux, France</div>
+
+        <a class="link_mail" href="mailto:grenouille.patafix@gmail.com">grenouille.patafix@gmail.com
+        </a>
+        <div class="icon_box">
+        <ul class="icon_link">
+            <li><a href="https://www.instagram.com/lisie_mordant/"><img src="Illustration_sans_titre2.png" width="25"
+                        alt="instagram_logo"></a></li>
+            <li><a href="mailto:grenouille.patafix@gmail.com"><img src="Illustration_sans_titre.png" width="25"
+                        alt="mail_logo"></a></li>
+            <li><a href="https://www.linkedin.com/in/lisie-mordant"><img src="Illustration_sans_titre1.png" width="25"
+                        alt="linkedin_logo"></a></li>
+        </ul>
+        </div>
+    </div>
+
+    <!-- <footer>
+        <div class="footer-boxes">
+            <div class="text fbox">
+                &copy; All rights reserved
+            </div>
+            <div class="center fbox">
+                <div class="centering"> 
+                    <a class="back_to_top_button" href="#">BACK TO TOP</a>
+                </div>
+            </div>
+
+            <div class="icon_reseau_link fbox">
+                <div class="apps">
+                    <div class="iconic">
+                        <a href="https://www.instagram.com/lisie_mordant/"><img src="Illustration_sans_titre2.png"
+                         width="25px" alt="instagram_logo"></a>
+                    </div>
+                    <div class="iconic two">
+                        <a href="mailto:grenouille.patafix@gmail.com"><img src="Illustration_sans_titre.png" 
+                            width="25px" alt="mail_logo"></a>
+                    </div>
+                    <div class="iconic">
+                        <a href="https://www.linkedin.com/in/lisie-mordant"><img src="Illustration_sans_titre1.png"
+                            width="25px" alt="linkedin_logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+<?php
+include('footer.php');
+?>
+</body>
+
+
+
+</html>
