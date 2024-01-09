@@ -127,7 +127,7 @@ main {
   }
 
 @media (max-width: 480px) {
-  .page_title {
+  .contact_page_title {
     display: none;
   }
 }
