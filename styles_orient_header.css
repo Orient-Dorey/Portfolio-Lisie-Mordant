@@ -165,17 +165,21 @@ body {
     }
     
     #check:checked~.navbar {
-        height: 9.3rem;
+        height: 17.3rem;
     }
 
     .navbar a {
         display: block;
         font-size: 1.1rem;
-        margin: 1.5rem 0;
+        margin: 3.5rem 0;
         text-align: center;
         transform: translateY(-50px);
         opacity: 0;
         transition: .3s ease;
+    }
+
+    .navbar a:hover {
+        color: blueviolet;
     }
 
     #check:checked~.navbar a {
