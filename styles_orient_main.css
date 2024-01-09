@@ -7,7 +7,7 @@
 
 
 main {
-    padding: 10rem 5% 2rem;
+    padding: 8rem 5% 2rem;
     display: inline-block;
     /* height: 2rem; */
     /* margin-top:25px; */
@@ -65,7 +65,7 @@ main {
 /* CONTACT PAGE */
 
 .contact_page {
-    padding: 10rem 5% 0;
+    padding: 8rem 5% 0;
     display: block;
     text-align: center;
     width: 100%;

@@ -9,7 +9,7 @@
 /* ****** */
 
 .footer-boxes{
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -25,10 +25,12 @@
 /* All rights reserved */
 .text {
     font-size: 10px;
+    background-color: pink;
 }
 
 /* BACK TO TOP */
 .center { 
+    background-color: red;
     text-align: center;
 }
 .back_to_top_button {
@@ -43,7 +45,7 @@
 
 /* Icons */
 .apps {
-    /* background-color: blue; */
+    background-color: blue;
     /* width: fit-content; */
     float: right;
 }
