@@ -136,10 +136,6 @@ body {
 } */
 
 @media (max-width: 900px) {
-    .header {
-        padding: 1.3rem 10%;
-    }
-
     .icons {
         display: inline-flex;
     }
