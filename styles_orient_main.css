@@ -92,8 +92,8 @@ main {
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
   margin: auto;
-/*   display: block; */
-  display: none;
+  display: block;
+  visibility: hidden;
   width: 80%;
   max-width: 700px;
   text-align: center;
