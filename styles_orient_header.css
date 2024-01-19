@@ -48,13 +48,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     background: #171717;
     /* background: pink; */
-=======
-    /* background: #171717; */
-    background: pink;
->>>>>>> 4d6a5635a6dbe8ad99cdf6864ee589f0c07e8c40
     z-index: -1;
 }
 
