@@ -59,10 +59,10 @@ main {
 #myImg {
   /* border-radius: 5px; */
   cursor: pointer;
-  transition: 0.3s;
+  /* transition: 0.3s; DO NOT USE OR IT BREAKS FLEX GRID */
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {opacity: 0.6;}
 
 /* The Modal (background) */
 .modal {
