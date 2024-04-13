@@ -93,7 +93,7 @@ main {
 #caption {
   margin: auto;
   display: block;
-  visibility: hidden;
+  /* visibility: hidden; */
   width: 80%;
   max-width: 700px;
   text-align: center;
