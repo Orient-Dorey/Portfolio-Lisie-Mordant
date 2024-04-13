@@ -1,53 +1,59 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
 main {
-    padding: 8rem 5% 2rem;
-    display: inline-block;
-    /* height: 2rem; */
-    /* margin-top:25px; */
-    /* background-color: red; */
+  padding: 8rem 5% 2rem;
+  display: inline-block;
+  /* height: 2rem; */
+  /* margin-top:25px; */
+  /* background-color: red; */
 }
 
 .page_title {
-    color: white;
-    margin-bottom: 2%;
-    text-align: center;
-    font-size: 24px;
-    text-transform: uppercase;
+  color: white;
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 /**
 * 1. Optional: 10px gutter
 */
 .fld-grd {
-    margin-right: -5px; /* [1] */
-    margin-left: -5px; /* [1] */
-    padding: 0 0 5px 0;
+  margin-right: -5px;
+  /* [1] */
+  margin-left: -5px;
+  /* [1] */
+  padding: 0 0 5px 0;
 }
 
 /**
 * 1. Mandatory: `display: inline-block` or a flexbox based grid system do also work
 * 2. Optional: 10px gutter
 */
-.fld-grd > div {
-    float: left; /* [1] */
-    padding-right: 5px; /* [2] */
-    padding-left: 5px; /* [2] */
-    margin-bottom: 10px;
+.fld-grd>div {
+  float: left;
+  /* [1] */
+  padding-right: 5px;
+  /* [2] */
+  padding-left: 5px;
+  /* [2] */
+  margin-bottom: 10px;
 }
 
 /**
 * 1. Optional: Setting `vertical-align` removes the whitespace that appears below `<img>` elements
 *    when they are dropped into a page as-is
 */
-.fld-grd > div > img {
-    vertical-align: top; /* [1] */
+.fld-grd>div>img {
+  vertical-align: top;
+  /* [1] */
 }
 
 
@@ -63,22 +69,61 @@ main {
   /* transition: 0.3s; DO NOT USE OR IT BREAKS FLEX GRID */
 }
 
-.imgformodal:hover {opacity: 0.6;}
+/* .imgformodal:hover {
+  opacity: 0.6;
+} */
+
+
+
+.imgformodal:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+/* Customise le texte de l'overlay */
+.imgtitle {
+  /* opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8); */
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1000;
+  /* Sit on top */
   /* z-index: 1; Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
   /* overflow: auto; Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -103,14 +148,20 @@ main {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 /* The Close Button */
@@ -142,66 +193,66 @@ main {
 /* CONTACT PAGE */
 
 .contact_page {
-    padding: 8rem 5% 0;
-    display: block;
-    text-align: center;
-    width: 100%;
-    /* height: 75%; */
-  }
-  
-  .name_title {
-    margin-top: 15px;
-    color: white;
-    font-size: 48px;
-  }
-  
-  .position_subtitle {
-    color: gray;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-  }
-  
-  .location {
-    margin-top: 15px;
-    color: gray;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-  }
-  
-  .link_mail {
-    display: inline-block;
-    outline: solid blueviolet 1px;
-    outline-offset: 15px;
-    border-radius: 25px;
-    margin-top: 35px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-  }
+  padding: 8rem 5% 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  /* height: 75%; */
+}
 
-  
-  .link_mail:hover {
-    color: blueviolet;
-  }
-  
-  .icon_box{
-      display: flex;
-      justify-content: center;
-      margin: auto;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-  }
-  
-  .icon_link {
-    vertical-align: middle;
-    padding: 0;
-    display: flex;
-    list-style-type: none;
-  }
-  
-  .icon_link li a {
-      padding: 3px;
-  }
+.name_title {
+  margin-top: 15px;
+  color: white;
+  font-size: 48px;
+}
+
+.position_subtitle {
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.location {
+  margin-top: 15px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.link_mail {
+  display: inline-block;
+  outline: solid blueviolet 1px;
+  outline-offset: 15px;
+  border-radius: 25px;
+  margin-top: 35px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+
+.link_mail:hover {
+  color: blueviolet;
+}
+
+.icon_box {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.icon_link {
+  vertical-align: middle;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.icon_link li a {
+  padding: 3px;
+}
 
 @media (max-width: 480px) {
   .contact_page_title {
